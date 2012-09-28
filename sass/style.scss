@@ -1,0 +1,53 @@
+@import "compass";
+
+html,
+body,
+#main {
+  height: 100%;
+  width: 100%;
+  background: #111;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+.wrap {
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  transition: all .4s linear;
+  float: left;
+  position: relative;
+}
+
+img {
+  height: auto;
+  vertical-align: bottom;
+}
+
+.flip {
+  -webkit-transform: rotate3d(0,1,0,-90deg);
+  -moz-transform: rotate3d(0,1,0,-90deg);
+  transform: rotate3d(0,1,0,-90deg);
+}
+
+.user-info {
+  @include border-radius( 30px );
+  background: rgba( #000, .3 );
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.project-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-name {
+  font-size: 12px;
+}
